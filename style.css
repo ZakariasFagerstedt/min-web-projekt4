@@ -31,3 +31,19 @@ nav {
   flex: 1;
   text-align: center;
 }
+.Pet {
+  width: 10%;
+  height: 20%;
+  background: url("images/Yellow.png") no-repeat;
+  /*background: url("images/42b.png");*/
+
+  display: grid;
+  grid-template-columns: 10% 10% 10%;
+  grid-template-rows: 20% 20%;
+}
+.Pet:hover {
+  width: 10%;
+  height: 20%;
+  background: url("images/3da.gif");
+  /*background: url("images/42b.gif");*/
+}
