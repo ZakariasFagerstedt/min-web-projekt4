@@ -34,16 +34,41 @@ nav {
 .Pet {
   width: 10%;
   height: 20%;
-  background: url("images/Yellow.png") no-repeat;
+  /*background: url("images/Yellow.png") no-repeat;
   /*background: url("images/42b.png");*/
-
-  display: grid;
-  grid-template-columns: 10% 10% 10%;
-  grid-template-rows: 20% 20%;
 }
-.Pet:hover {
+/*.Pet:hover {
   width: 10%;
   height: 20%;
   background: url("images/3da.gif");
   /*background: url("images/42b.gif");*/
+/*}*/
+.Pet {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25%s;
+  gap: 0px 0px;
+  grid-template-areas:
+    "a1 a2 a3 a4"
+    ". . . ."
+    ". . . .";
+}
+
+.a1 {
+  grid-area: a1;
+  background: url("images/Yellow.png");
+}
+.a1:hover {
+  background: url("images/3da.gif");
+}
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+.a4 {
+  grid-area: a4;
 }
