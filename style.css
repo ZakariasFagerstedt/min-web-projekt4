@@ -32,43 +32,46 @@ nav {
   text-align: center;
 }
 .Pet {
-  width: 10%;
-  height: 20%;
-  /*background: url("images/Yellow.png") no-repeat;
-  /*background: url("images/42b.png");*/
-}
-/*.Pet:hover {
-  width: 10%;
-  height: 20%;
-  background: url("images/3da.gif");
-  /*background: url("images/42b.gif");*/
-/*}*/
-.Pet {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25%s;
-  gap: 0px 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
   grid-template-areas:
     "a1 a2 a3 a4"
-    ". . . ."
+    "b1 b2 b3 b4"
     ". . . .";
 }
 
-.a1 {
+#a1 {
   grid-area: a1;
+  height: 25vh;
+  background: url("images/42b.png");
+}
+#a1:hover {
+  background: url("images/42b.gif");
+}
+#a3 {
+  grid-area: a3;
+  height: 25vh;
+  background: url("images/0d3.png");
+}
+#a3:hover {
+  background: url("images/0d3.gif");
+}
+
+#a2 {
+  grid-area: a2;
+  height: 25vh;
   background: url("images/Yellow.png");
 }
-.a1:hover {
+#a2:hover {
   background: url("images/3da.gif");
 }
-.a2 {
-  grid-area: a2;
+#b2 {
+  grid-area: b2;
+  height: 40vh;
+  background: url("images/cat.png");
 }
-
-.a3 {
-  grid-area: a3;
-}
-
-.a4 {
-  grid-area: a4;
+#b2:hover {
+  background: url("images/cat.gif");
 }
