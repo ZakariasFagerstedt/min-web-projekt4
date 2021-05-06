@@ -7,8 +7,8 @@
     // { id: 5, hovers: 0 },
     // { id: 6, hovers: 0 },
     // { id: 7, hovers: 0 },
-    // { id: 8, hovers: 0 },
-    // { id: 9, hovers: 0 },
+    //  { id: 8, hovers: 0 },
+    //  { id: 9, hovers: 0 },
   ];
 
   // Use a named function, not an anonymous function

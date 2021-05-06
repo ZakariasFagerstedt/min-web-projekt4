@@ -50,14 +50,6 @@ nav {
 #a1:hover {
   background: url("images/42b.gif");
 }
-#a3 {
-  grid-area: a3;
-  height: 25vh;
-  background: url("images/0d3.png");
-}
-#a3:hover {
-  background: url("images/0d3.gif");
-}
 
 #a2 {
   grid-area: a2;
@@ -67,6 +59,15 @@ nav {
 #a2:hover {
   background: url("images/3da.gif");
 }
+#a3 {
+  grid-area: a3;
+  height: 25vh;
+  background: url("images/0d3.png");
+}
+#a3:hover {
+  background: url("images/0d3.gif");
+}
+
 #b2 {
   grid-area: b2;
   height: 40vh;
