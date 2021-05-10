@@ -1,10 +1,10 @@
 (function () {
   var counter = [
-    { id: a1, hovers: 0 },
-    { id: a2, hovers: 0 },
-    { id: a3, hovers: 0 },
-    { id: b2, hovers: 0 },
-    // { id: 5, hovers: 0 },
+    { id: "a1", hovers: 0 },
+    { id: "a2", hovers: 0 },
+    { id: "a3", hovers: 0 },
+    { id: "b1", hovers: 0 },
+    { id: "b2", hovers: 0 },
     // { id: 6, hovers: 0 },
     // { id: 7, hovers: 0 },
     //  { id: 8, hovers: 0 },
@@ -21,11 +21,13 @@
     // then update the hover count
     counter.forEach(function (ele, i) {
       // Match the id against the event target
-      if (ele.id === Number(event.target.id)) {
-        ele.hovers += 1;
-
-        // Logging to show in example
+      if (ele.id === event.target.id) {
+        ele.hovers++;
         console.log("Element", event.target, "Total Hovers:", ele.hovers);
+        let currentCounter = document.querySelector(
+          "[data-counter-for='" + ele.id + "']"
+        );
+        currentCounter.innerText = ele.hovers;
       }
     });
   }
@@ -33,7 +35,7 @@
   // Iterate over your counter to find the elements
   counter.forEach(function (ele, i) {
     // Variable storage isn't necessary, it's provided for clarity
-    var div = document.getElementById(String(ele.id));
+    let div = document.getElementById(String(ele.id));
 
     // Add the mouseenter (not mouseover) event to the div
     div.addEventListener("mouseenter", updateHoverCount);
